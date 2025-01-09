@@ -37,3 +37,24 @@
 *   #### DNS
     
     Short for Domain Name System, it describes the entities and protocols involved in the translation from domain names to IP Addresses. Typically, machines make a DNS query to a well known entity which is responsible for returning the IP address (or multiple ones) of the requested domain name in the response.
+
+*   #### - Notes from Video
+
+    1. **DNS Query**:  
+      When you enter a website address (e.g., `algoexpert.ie`) into the browser, the browser makes a DNS query to resolve the domain name to an IP address.  
+      - Example: You can simulate this process using the `dig` command in the terminal:  
+        ```bash
+        dig algoexpert.ie
+        ```
+
+    2. **HTTP Request**:  
+      Once the browser obtains the IP address, it makes an HTTP request to the server hosting the website. The server typically listens on a specific port (e.g., port 80 for HTTP or port 443 for HTTPS).
+
+    3. **Server Response**:  
+      The server processes the HTTP request and sends the requested data back to the source IP address (your local machine).
+
+    4. **Rendering in the Browser**:  
+      The browser receives the response, which usually includes HTML, CSS, JavaScript, and other resources. It then renders the content to display the website.
+
+    This process involves multiple steps to ensure smooth communication between the client (your browser) and the server hosting the website.
+    
